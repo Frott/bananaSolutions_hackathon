@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logowanie</title>
+    <title>bananaHelper</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="fixed-top">
         <nav class="navbar navbar-light bg-dark">
             <a class="navbar-brand d-inline-block" href="index.html">
                 <img src="./img/zs6.png" width="60" height="90" class="d-inline-block align-top" alt="" loading="lazy">
@@ -20,26 +20,35 @@
             <div class="name nav-item text-light">Mateusz</div>
             <div class="points nav-item text-light">100</div>
             <div class="rank nav-item text-light">Nowicjusz</div>
+            <a href="#"><button class="btn btn-outline-primary">Wyloguj się</button></a>
         </nav>
     </header>
 
-    <div class="container">
-
-        <form class="my-5 py-5">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Adres Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <main>
+        <div class="page-content">
+            <div class="container">
+                <section>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Tytuł</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Liczba punktów</label> <br>
+                            <input type="number" id="points" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Opis</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Wystaw ogłoszenie</button>
+                    </form>
+                </section>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Hasło</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <button type="submit" class="btn btn-primary w-100 my-2">Zaloguj</button>
-        </form>
+        </div>
+    </main>
 
-    </div>
-
-    <footer class="page-footer font-small blue bg-dark mt-5">
+    <footer class="page-footer font-small blue bg-dark mt-5 fixed-bottom">
 
         <div class="footer-copyright text-center py-3 text-light">© 2020 Copyright:
             bananaSolutions
