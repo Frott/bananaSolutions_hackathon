@@ -1,7 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+
 .nav-item {
     font-size: 22px;
 }
 
-.container {
-    position: relative;
+.card-img-top {
+    background-position: center;
+}
+
+.page-content {
+    margin-top: 150px;
+    min-height: 100%;
+    margin-bottom: -90px;
+}
+
+.page-content::after {
+    content: "";
+    display: block;
+}
+
+footer, .page-content::after {
+    height: 100px;
+}
+
+footer {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
