@@ -1,0 +1,7 @@
+app_id: "69171d4b-b09f-42ed-872e-72c67ee17a81"
+app_secret: "3YmdGZy3lVho4-h~cc2-bY1Y~8x2easU1Q"
+redirect: "http://localhost:8000/callback"
+scopes: "openid profile offline_access user.read"
+authority: "https://login.microsoftonline.com/zs6sobieski.edu.pl"
+authorize_endpoint: "/oauth2/v2.0/authorize"
+token_endpoint: "/oauth2/v2.0/token"

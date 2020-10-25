@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% block content %}
+    <h1>{{ object.name }}</h1>
+    <p>{{ object.price }}</p>
+    <p>{{ object.user }}</p>
+    <p>{{ object.description }}</p>
+    {% endblock %}
+  </body>
+</html>
